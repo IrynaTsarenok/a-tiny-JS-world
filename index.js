@@ -1,3 +1,51 @@
+const dog = {
+  species: "dog",
+  name: "Rex",
+  gender: "male",
+  legs: 4,
+  hands: 0,
+  saying: "woof-woof!",
+};
+const cat = {
+  species: "cat",
+  name: "Li",
+  gender: "female",
+  legs: 4,
+  hands: 0,
+  saying: "meow-meow!",
+};
+const woman = {
+  species: "human",
+  name: "Angelina",
+  gender: "female",
+  legs: 2,
+  hands: 2,
+  saying: "Hello, my name is Angelina! I'm interesting person",
+};
+const man = {
+  species: "human",
+  name: "Mark",
+  gender: "male",
+  legs: 2,
+  hands: 2,
+  saying: "Hello, my name is Mark! I'm a pilot",
+};
+
+const womanCat = {
+  species: "human",
+  name: "Roxy",
+  gender: "female",
+  legs: 2,
+  hands: 2,
+  saying: cat.saying,
+};
+const inhabitants = [dog, cat, woman, womanCat, man];
+const keys = ["species", "name", "gender", "legs", "hands", "saying", "frends"];
+
+inhabitants.map((inhabitant) => {
+  print(keys.map((key) => inhabitant[key]).join(", "));
+});
+
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
    Complete the below for code reviewers' convenience:
 
@@ -7,7 +55,6 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
-
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -27,5 +74,3 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
-
-
